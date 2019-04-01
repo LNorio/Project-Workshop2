@@ -1,0 +1,111 @@
+/*ctrl+f5 se o servidor n estiver atualizando a estilização que estiver*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/background-outside.JPG');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+body, form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-content {
+    background-color: rgba(0, 0, 48, 0.726);
+    min-height: 100vh;
+    min-width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+hgroup{
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48pt;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 26pt;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.section-content, form {
+    flex-direction: column;
+}
+
+h1, h2, form, form label, form input {
+    width: 90%;
+    color: rgb(255, 255, 255);
+}
+
+form label {
+    font-size: 16pt;
+    margin-bottom: 5px;
+}
+
+form input {
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+    font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+form input:hover {
+    background-color: rgba(0, 0, 0, 0.658);
+}
+
+form input:focus {
+    outline-style: none;
+}
+
+.section-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.section-buttons button {
+    width: 90%;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    font-size: 12pt;
+    padding: 5px 0 5px 0;
+    background-color: rgb(78, 75, 255);
+    color: white;
+    transition: all 0.2s;
+}
+
+.section-buttons button:hover {
+    -webkit-transform: scale(1.05);
+}
