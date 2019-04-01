@@ -1,3 +1,5 @@
+/* CSS Document */
+
 /*ctrl+f5 se o servidor n estiver atualizando a estilização que estiver*/
 
 * {
@@ -17,16 +19,22 @@ body {
 
 }
 
-body, form {
+body, form, div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.back-container {
+    height: 100%;
+    min-width: 100%;
+    background-color: rgba(0, 0, 48, 0.479);
+}
+
 .section-content {
     background-color: rgba(0, 0, 48, 0.726);
     min-height: 100vh;
-    min-width: 40%;
+    min-width: 60vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -65,7 +73,7 @@ h1, h2, form, form label, form input {
 
 form label {
     font-size: 16pt;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 form input {
@@ -101,11 +109,16 @@ form input:focus {
     margin-top: 20px;
     font-size: 12pt;
     padding: 5px 0 5px 0;
-    background-color: rgb(78, 75, 255);
+    background-color: rgb(76, 47, 180);
     color: white;
     transition: all 0.2s;
 }
 
 .section-buttons button:hover {
     -webkit-transform: scale(1.05);
+}
+
+.section-buttons button:focus {
+    outline-style: none;
+    background-color: rgb(100, 75, 192);
 }
