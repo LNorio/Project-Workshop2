@@ -16,7 +16,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 body, form, div {
@@ -26,67 +25,58 @@ body, form, div {
 }
 
 .back-container {
-    height: 100%;
-    min-width: 100%;
-    background-color: rgba(0, 0, 48, 0.479);
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(236, 236, 236, 0.911);
 }
 
 .section-content {
-    background-color: rgba(0, 0, 48, 0.726);
-    min-height: 100vh;
-    min-width: 60vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-hgroup{
-    width: 100%;
-    min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.568);
+    background-image: linear-gradient(rgb(132, 0, 255), rgb(172, 0, 255), rgb(212, 0, 255));
 }
 
 h1 {
-    font-size: 48pt;
-    margin-bottom: 15px;
-}
-
-h2 {
-    font-size: 26pt;
-}
-
-h1, h2 {
     text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .section-content, form {
     flex-direction: column;
 }
 
-h1, h2, form, form label, form input {
-    width: 90%;
-    color: rgb(255, 255, 255);
+form {
+    justify-content: flex-start;
 }
 
-form label {
-    font-size: 16pt;
-    margin-bottom: 10px;
+h1, h2, form, form input {
+    color: white;
+    width: 100%;
+}
+
+form i {
+    margin-top: 30px;
 }
 
 form input {
-    background-color: rgba(0, 0, 0, 0.541);
-    padding: 8px;
+    background-color: rgba(255, 255, 255, 0);
     border: none;
-    border-radius: 30px;
-    font-size: 12pt;
-    margin-bottom: 20px;
+    font-size: 16pt;
+}
+
+form hr {
+    width: 100%;
+    border: 1px solid white;
+}
+
+form input::placeholder {
+    color: white;
 }
 
 form input:hover {
-    background-color: rgba(0, 0, 0, 0.658);
+
 }
 
 form input:focus {
@@ -94,23 +84,10 @@ form input:focus {
 }
 
 .section-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 30px;
 }
 
 .section-buttons button {
-    width: 90%;
-    border-radius: 30px;
-    border: none;
-    margin-top: 20px;
-    font-size: 12pt;
-    padding: 5px 0 5px 0;
-    background-color: rgb(76, 47, 180);
-    color: white;
     transition: all 0.2s;
 }
 
@@ -120,5 +97,4 @@ form input:focus {
 
 .section-buttons button:focus {
     outline-style: none;
-    background-color: rgb(100, 75, 192);
 }
